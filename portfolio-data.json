@@ -21,9 +21,9 @@
       "location": "Hybrid, Makkah",
       "period": "Current",
       "highlights": [
-        "Constructed a structured legal text benchmark from 500+ Saudi law documents for Arabic NLP evaluation",
-        "Evaluated Arabic embedding models via MTEB leaderboard to shortlist production candidates",
-        "Built OCR pipeline using AlOCR API with Arabic text normalization and WER/CER evaluation",
+        "Built Arabic legal corpus extraction pipeline: scraped and structured 500+ Saudi law documents from Bawabah Al-Bahth, exported to JSONL with metadata for NLP evaluation",
+        "Evaluated Arabic embedding models using MTEB leaderboard — filtered 2024–2026 releases, scored by Arabic retrieval benchmarks, produced ranked shortlist for production use",
+        "Built OCR pipeline using AlOCR API with Arabic text normalization and WER/CER evaluation metrics",
         "Developed Balsam leaderboard scraper as a FastAPI service with 1-hour cache and fallback"
       ]
     },
@@ -33,8 +33,8 @@
       "location": "On-site, Makkah",
       "period": "Current",
       "highlights": [
-        "Built Umrah pilgrim data extraction system: PaddleOCR + FastAPI + field parser for permit images",
-        "Developed Arabic analytics chatbot (Mar 2026): FastMCP server over Cube.dev + Directus, integrated with LibreChat for real-time analysis"
+        "Built Umrah pilgrim permit extraction system (v2): PaddleOCR Arabic OCR + FastAPI service + structured field parser — extracts name, nationality, permit ID, dates from scanned permit images with warm-up model loading",
+        "Developed Arabic analytics chatbot (Mar 2026): FastMCP server bridging Cube.dev + Directus, integrated with LibreChat — enables natural-language querying of live operational data"
       ]
     },
     {
@@ -101,6 +101,39 @@
         "Persistent memory across sessions, tiered model routing (GPT-4.1 / Claude Sonnet), Docker Compose"
       ],
       "tags": ["AI Agents", "FastMCP", "Docker", "LLM"]
+    },
+    {
+      "name": "Arabic Embedding Model Evaluation",
+      "status": "Research",
+      "platform": "Qanoniah — Legal Tech",
+      "description": "MTEB-based evaluation pipeline to shortlist Arabic embedding models for legal NLP production use",
+      "highlights": [
+        "Filtered MTEB 2024–2026 Arabic models by retrieval benchmarks; ranked candidates for production use",
+        "Automated extraction script pulling model metadata, scores, and release dates from MTEB leaderboard"
+      ],
+      "tags": ["Embeddings", "MTEB", "Arabic NLP", "Evaluation"]
+    },
+    {
+      "name": "Arabic Legal Corpus Extraction",
+      "status": "Research",
+      "platform": "Qanoniah — Legal Tech",
+      "description": "End-to-end pipeline extracting and structuring Saudi legal documents for Arabic NLP benchmarking",
+      "highlights": [
+        "Scraped and structured 500+ Saudi law documents from Bawabah Al-Bahth into a JSONL corpus with metadata",
+        "Built question generation pipeline and viewer for human annotation and NLP benchmark construction"
+      ],
+      "tags": ["Legal NLP", "Data Pipeline", "Arabic NLP", "Benchmark"]
+    },
+    {
+      "name": "Umrah Pilgrim Permit Extractor",
+      "status": "Production",
+      "platform": "Moasherat",
+      "description": "OCR-based FastAPI service extracting structured data from Arabic Umrah permit images",
+      "highlights": [
+        "PaddleOCR Arabic engine + structured field parser extracting name, nationality, permit ID, and dates",
+        "FastAPI service with warm-up model loading, CORS support, and image preprocessing via OpenCV"
+      ],
+      "tags": ["PaddleOCR", "Arabic OCR", "FastAPI", "Computer Vision"]
     },
     {
       "name": "NLP Learning Guide + Coffee Flavor Map",

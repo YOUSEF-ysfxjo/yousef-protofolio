@@ -235,8 +235,8 @@ function About() {
         <div
           style={{
             display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))",
-            gap: "80px",
+            gridTemplateColumns: "repeat(auto-fit, minmax(min(300px, 100%), 1fr))",
+            gap: "48px",
             alignItems: "center",
           }}
         >
@@ -488,6 +488,15 @@ const projectLinks: Record<string, { github?: string; live?: string }> = {
   "Bella — Personal AI Agent System": {
     github: "https://github.com/YOUSEF-ysfxjo",
   },
+  "Arabic Embedding Model Evaluation": {
+    github: "https://github.com/YOUSEF-ysfxjo",
+  },
+  "Arabic Legal Corpus Extraction": {
+    github: "https://github.com/YOUSEF-ysfxjo",
+  },
+  "Umrah Pilgrim Permit Extractor": {
+    github: "https://github.com/YOUSEF-ysfxjo",
+  },
   "NLP Learning Guide + Coffee Flavor Map": {
     github: "https://github.com/YOUSEF-ysfxjo/ml-nlp-guide",
     live:   "https://ml-nlp-guide.netlify.app",
@@ -627,7 +636,7 @@ function Certifications() {
           </p>
         </SectionReveal>
 
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(380px, 1fr))", gap: "10px" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill, minmax(min(380px, 100%), 1fr))", gap: "10px" }}>
           {data.certifications.map((cert, i) => {
             const color = cert.includes("KAUST") ? "#6366f1" : cert.includes("DeepLearning") ? "#22c55e" : cert.includes("AWS") ? "#f59e0b" : "var(--text-subtle)";
             return (
