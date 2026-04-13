@@ -1,0 +1,141 @@
+{
+  "profile": {
+    "name": "Yousef Ammar Abdullah",
+    "title": "AI Engineer & Data Scientist",
+    "subtitle": "Building production ML systems with Arabic NLP, Explainable AI, and privacy-preserving technologies",
+    "email": "yousefammarabdullah.a@gmail.com",
+    "phone": "0509610800",
+    "github": "https://github.com/YOUSEF-ysfxjo",
+    "linkedin": "https://www.linkedin.com/in/yousef-ammar-6351a9325/",
+    "location": "Makkah, Saudi Arabia",
+    "gpa": "3.92 / 4.00",
+    "university": "Umm Al-Qura University (UQU)",
+    "graduationYear": "2027",
+    "year": "3rd year"
+  },
+  "about": "AI Engineer and Data Science undergraduate (3rd year, GPA 3.92) specializing in Arabic NLP, Explainable AI, and production ML systems. Currently holding two concurrent AI roles while conducting active research on XAI and Federated Learning. Builds deterministic, privacy-preserving ML systems deployed in production.",
+  "experience": [
+    {
+      "role": "Data Scientist Intern",
+      "company": "Qanoniah — Legal Tech",
+      "location": "Hybrid, Makkah",
+      "period": "Current",
+      "highlights": [
+        "Constructed a structured legal text benchmark from 500+ Saudi law documents for Arabic NLP evaluation",
+        "Evaluated Arabic embedding models via MTEB leaderboard to shortlist production candidates",
+        "Built OCR pipeline using AlOCR API with Arabic text normalization and WER/CER evaluation",
+        "Developed Balsam leaderboard scraper as a FastAPI service with 1-hour cache and fallback"
+      ]
+    },
+    {
+      "role": "AI Engineer Intern",
+      "company": "Moasherat",
+      "location": "On-site, Makkah",
+      "period": "Current",
+      "highlights": [
+        "Built Umrah pilgrim data extraction system: PaddleOCR + FastAPI + field parser for permit images",
+        "Developed Arabic analytics chatbot (Mar 2026): FastMCP server over Cube.dev + Directus, integrated with LibreChat for real-time analysis"
+      ]
+    },
+    {
+      "role": "Data Analyst (Hajj Season)",
+      "company": "Moasherat",
+      "location": "On-site, Makkah",
+      "period": "Hajj 2025",
+      "highlights": [
+        "Monitored real-time dashboards and KPIs across Hajj 2025 operations",
+        "Analyzed performance irregularities and managed satisfaction survey data under high-pressure conditions"
+      ]
+    }
+  ],
+  "research": {
+    "title": "Arabic NLP Research — Explainable AI & Federated Learning",
+    "status": "In Progress",
+    "target": "IEEE Access",
+    "highlights": [
+      "Constructed a 100,000-sample gold-standard Arabic dataset from a large-scale public review corpus (70M+ entries)",
+      "Research goal: evaluate XAI interpretability (SHAP, LIME) and privacy-preserving Federated Learning on Arabic multi-task NLP",
+      "Simulated IID and non-IID FL environments using FedAvg; analyzed gradient drift and convergence behavior across data distributions"
+    ]
+  },
+  "projects": [
+    {
+      "name": "Arabic Complaint Classification API",
+      "status": "Production",
+      "platform": "Railway",
+      "description": "MARBERT-based FastAPI service: sentiment, topic, and action classification on Arabic complaints",
+      "highlights": [
+        "Deterministic routing engine with optional LLM explanation layer — LLM explains, never decides",
+        "Docker deployment on Railway with pytest suite and mocked model tests"
+      ],
+      "tags": ["FastAPI", "MARBERT", "Arabic NLP", "Production ML"]
+    },
+    {
+      "name": "AI Family Matching System",
+      "status": "Finalist",
+      "platform": "Social Development Innovation Hackathon",
+      "description": "Privacy-preserving face similarity matching with explainable AI",
+      "highlights": [
+        "Privacy-preserving face similarity: InsightFace embeddings + FAISS vector search (no raw images stored)",
+        "106-point landmark XAI: per-region similarity scores (jaw, nose, eyes) for transparent matching",
+        "FastAPI microservice + Docker, deployed as part of finalist submission"
+      ],
+      "tags": ["Computer Vision", "XAI", "Privacy", "FastAPI"]
+    },
+    {
+      "name": "Interpretable Cardiology Risk Model",
+      "status": "Research",
+      "description": "Integrated Classical Statistics, Bayesian inference, and XAI",
+      "highlights": [
+        "Integrated Classical Statistics (Odds Ratios), Bayesian inference (PyMC), and XAI (SHAP)",
+        "Subgroup analysis by gender and age group; handled class imbalance and VIF multicollinearity"
+      ],
+      "tags": ["Healthcare", "Bayesian ML", "XAI", "PyMC"]
+    },
+    {
+      "name": "Bella — Personal AI Agent System",
+      "status": "Active",
+      "description": "Multi-tool AI agent with persistent memory and tiered model routing",
+      "highlights": [
+        "Multi-tool AI agent: FastMCP server with Notion, GitHub, Obsidian wiki, filesystem, shell, and web access",
+        "Persistent memory across sessions, tiered model routing (GPT-4.1 / Claude Sonnet), Docker Compose"
+      ],
+      "tags": ["AI Agents", "FastMCP", "Docker", "LLM"]
+    },
+    {
+      "name": "NLP Learning Guide + Coffee Flavor Map",
+      "status": "Live",
+      "platform": "ml-nlp-guide.netlify.app",
+      "description": "Comparative study of Word2Vec, GloVe, FastText on specialty coffee corpus",
+      "highlights": [
+        "Comparative study of Word2Vec, GloVe, FastText on a specialty coffee flavor corpus",
+        "Published interactive visualization"
+      ],
+      "tags": ["NLP", "Word Embeddings", "Visualization"]
+    }
+  ],
+  "skills": {
+    "programming": ["Python", "JavaScript", "HTML/CSS"],
+    "ml_nlp": ["HuggingFace Transformers", "MARBERT", "AraBERT", "Scikit-learn", "PyTorch", "gensim (Word2Vec, FastText, GloVe)"],
+    "xai": ["SHAP", "LIME", "Global and local explainability"],
+    "federated_ml": ["FedAvg", "Custom sequential FL simulation", "IID vs non-IID data distribution analysis"],
+    "vision_ocr": ["InsightFace", "PaddleOCR", "OpenCV", "DeepFace", "FAISS", "PyMC", "imbalanced-learn"],
+    "infrastructure": ["FastAPI", "Docker", "Railway", "Render", "PostgreSQL", "Git/GitHub"],
+    "specialties": ["Arabic NLP", "Explainable AI", "Federated Learning", "Production ML Systems", "Privacy-by-Design"]
+  },
+  "certifications": [
+    "Advanced AI Course (40h — Computer Vision) – KAUST Academy @ UQU (Feb 2026)",
+    "Artificial Intelligence Introduction – KAUST Academy (Jan 2026)",
+    "Mathematics for ML & Data Science Specialization – DeepLearning.AI (Dec 2025)",
+    "Deep Learning Specialization – DeepLearning.AI (2025)",
+    "Probability & Statistics for ML & Data Science – DeepLearning.AI (Nov 2025)",
+    "Linear Algebra for ML & Data Science – DeepLearning.AI (Nov 2025)",
+    "eJDS — Junior Data Scientist – INE (Oct 2025)",
+    "Introducing Generative AI with AWS – Udacity (Jun 2025)",
+    "AWS Educate — Machine Learning Foundations – Amazon Web Services (2025)"
+  ],
+  "languages": [
+    { "language": "Arabic", "proficiency": "Native" },
+    { "language": "English", "proficiency": "Professional Working Proficiency" }
+  ]
+}
